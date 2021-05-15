@@ -1,0 +1,16 @@
+def create_usr(name):
+    accounts = []
+    name = ''
+    if len(name) < 3:
+        print('Sorry, username must be more than 3 characters')
+    elif len(name) > 15:
+        print("Sorry, username can't be longer than 15 characters")
+    elif name in accounts:
+        print("Sorry, that username is already in use")
+    else:
+        return name
+        accounts.append(name)
+        print('Success! Account ' + name + ' was created.')
+
+create_usr(rylo)
+
